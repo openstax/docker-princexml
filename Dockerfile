@@ -7,7 +7,7 @@ ADD https://www.princexml.com/download/prince_${PRINCE_VERSION}_debian${PRINCE_D
 
 RUN set -x \
     && apt-get update \
-    && apt-get install gdebi --no-install-recommends -y \
+    && apt-get install gdebi fonts-stix --no-install-recommends -y \
     && gdebi --non-interactive /tmp/prince_${PRINCE_VERSION}_debian${PRINCE_DEB_BUILD}_amd64.deb \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
