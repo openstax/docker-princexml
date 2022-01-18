@@ -3,6 +3,8 @@ PrinceXML
 
 This is a containerized installation of the PrinceXML application.
 
+This is archived because the code is now part of the `book-production image <https://github.com/openstax/book-pipeline>`_
+
 Usage::
 
   make help
